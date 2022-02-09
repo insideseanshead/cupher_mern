@@ -28,10 +28,10 @@ const putCharacter = asyncHandler(async(req,res) => {
 // @desc DELETE Characters
 // @route DELETE /api/characters
 // @acess Public
-const deleteCharacters = asyncHandler(async(req,res) => {
+const deleteCharacter = asyncHandler(async(req,res) => {
     res.status(200).json({message: `Delete characters ${req.params.id}`})
 })
 
 module.exports = {
-    getCharacters, postCharacter, putCharacter, deleteCharacters,
+    getCharacters, postCharacter, putCharacter, deleteCharacter,
 }
